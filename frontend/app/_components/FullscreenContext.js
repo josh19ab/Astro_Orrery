@@ -1,7 +1,7 @@
-'use client'
-import  { createContext, useState, useRef, useEffect } from "react";
+"use client";
+import { createContext, useState, useRef, useEffect } from "react";
 
-const FullscreenContext = createContext(null);
+const FullScreenContext = createContext(null);
 
 export const FullscreenProvider = ({ children }) => {
   const canvasRef = useRef(null);
@@ -43,7 +43,7 @@ export const FullscreenProvider = ({ children }) => {
   }, []);
 
   return (
-    <FullscreenContext.Provider
+    <FullScreenContext.Provider
       value={{
         canvasRef,
         isFullscreen,
@@ -54,8 +54,8 @@ export const FullscreenProvider = ({ children }) => {
       }}
     >
       {children}
-    </FullscreenContext.Provider>
+    </FullScreenContext.Provider>
   );
 };
 
-export default FullscreenContext;
+export default FullScreenContext;

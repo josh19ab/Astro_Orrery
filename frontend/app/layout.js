@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./_components/Navbar";
-import { FullscreenProvider } from "../app/_components/FullScreenContext.js"; // Import the provider
+import { FullscreenProvider } from "./_components/FullScreenContext.js"; // Import the provider
 import Controls from "./_components/Controls";
 
 const geistSans = localFont({

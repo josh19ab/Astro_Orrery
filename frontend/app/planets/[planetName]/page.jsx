@@ -67,10 +67,7 @@ const PlanetModel = () => {
   const planet = planetsData[planetName.toLowerCase()]; // Match the planet name from the data
 
   // If the planet is not found, show a 404 or a custom not found page
-  if (!planet) {
-    return notFound();
-  }
-
+ 
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false); // Set loading to false after 1 second
